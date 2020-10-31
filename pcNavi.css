@@ -1,0 +1,54 @@
+/* 네비 스타일 */
+#topNavi {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    background-color: rgb(251, 251, 251);
+    padding: 1rem 4rem 0rem 4rem;
+    border: rgb(199, 199, 199) 1px thick;
+    align-items: center;
+}
+#naviList {
+    width: auto;
+    height: 100%;
+    margin: 0px auto;
+    display: inline-flex;
+    flex-direction: row;
+}
+#topNavi a {
+    text-decoration-line: none;
+}
+#listInner, #languageInner {
+    height: 100%;
+    display: flex;
+    padding: 0rem 0.7rem 1rem 0.7rem;
+    align-items: center;
+}
+#languageInner a {
+    font-size: 0.9rem;
+    color: rgb(177, 177, 177);
+}
+#listInner:hover, #topLogoImg:hover, #languageInner:hover {
+    cursor: pointer;
+}
+#languageInner a:hover {
+    color: rgb(0, 0, 0);
+}
+#listInner:hover {
+    border: 5px rgb(47, 47, 47) solid;
+    border-width: 0 0 2px 0;
+}
+#topLogoImg {
+    margin: 0rem 3rem 0.5rem 0rem;
+    width: 95px;
+    height: 35px;
+}
+#recuritIcon {
+    margin-left: 3px;
+    width: 13px;
+    height: 13px;
+}
+#changeLanguage {
+    display: flex;
+    margin-left: 3rem;
+}
