@@ -10,37 +10,206 @@
 </head>
 
 <body>
-    <div id="pageWrap">
+    <div class="pageWrap">
 
-        <!-- 상단 네비 -->
-        <div id="topNavi">
-            <img src="images/kakaoLogoBlack.PNG" id="topLogoImg">
-            <ui id="naviList">
-                <li id="listInner">
-                    <a>카카오</a>
-                </li>
-                <li id="listInner">
-                    <a>투자정보</a>
-                </li>
-                <li id="listInner">
-                    <a>서비스</a>
-                </li>
-                <li id="listInner">
-                    <a>소셜임팩트</a>
-                </li>
-                <li id="listInner">
-                    <a>고객지원</a>
-                </li>
-                <li id="listInner">
-                    <a>인재영입</a>
-                    <img src="images/recuritIcon.PNG" id="recuritIcon">
-                </li>
-            </ui>
-            <ui id="changeLanguage">
-                <li id="languageInner"><a>KOR</a></li>
-                <li id="languageInner"><a>ENG</a></li>
-            </ui>
+        <!-- 메뉴바 -->
+        <div class="menubar">
+            <!-- 상단 네비 -->
+            <div class="topNavi">
+                <img src="images/kakaoLogoBlack.PNG" class="topLogoImg">
+                <ui class="naviList">
+                    <li class="listInner">
+                        <a class="kakaoTop">카카오</a>
+                    </li>
+                    <li class="listInner">
+                        <a class="investmentTop">투자정보</a>
+                    </li>
+                    <li class="listInner">
+                        <a class="serviceTop">서비스</a>
+                    </li>
+                    <li class="listInner">
+                        <a class="socialTop">소셜임팩트</a>
+                    </li>
+                    <li class="listInner">
+                        <a>고객지원</a>
+                    </li>
+                    <li class="listInner">
+                        <a>인재영입</a>
+                        <img src="images/recuritIcon.PNG" class="recuritIcon">
+                    </li>
+                </ui>
+                <ui class="changeLanguage">
+                    <li class="languageInner"><a>KOR</a></li>
+                    <li class="languageInner"><a>ENG</a></li>
+                </ui>
+            </div>
+
+            <!-- 네비 상세메뉴 -->
+            <div class="naviMenu">
+                <div class="kakaoDetailMenu" id="kakaoDetailMenu">
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>카카오 소개</a></li>
+                        <li class="innerDetail"><a>카카오 문화</a></li>
+                        <li class="innerDetail"><a>걸어온길</a></li>
+                        <li class="innerDetail"><a>CI</a></li>
+                        <li class="innerDetail"><a>윤리규정</a></li>
+                    </ui>
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>카카오 AI</a></li>
+                        <li class="innerDetail"><a>소개</a></li>
+                        <li class="innerDetail"><a>알고리즘 윤리</a></li>
+                    </ui>
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>자회사</a></li>
+                    </ui>
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>비즈니스</a></li>
+                        <li class="innerDetail"><a>광고 안내</a></li>
+                        <li class="innerDetail"><a>제휴 안내</a></li>
+                        <li class="innerDetail"><a>Kakao for Business<img src="images/recuritIcon.PNG"
+                                    class="recuritIcon"></a></li>
+                    </ui>
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>홍보채널</a></li>
+                        <li class="innerDetail"><a>보도자료</a></li>
+                        <li class="innerDetail"><a>브랜드 영상</a></li>
+                        <li class="innerDetail"><a>미디어 행사</a></li>
+                        <li class="innerDetail"><a>Kakao Trabel Day</a></li>
+                    </ui>
+                    <ui class="kakaoMenuInner">
+                        <li class="innerBold"><a>오시는길</a></li>
+                    </ui>
+                </div>
+
+                <div class="investmentMenu" id="invertmentDetailMenu">
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>경영정보</a></li>
+                        <li class="innerDetail"><a>주주구성</a></li>
+                        <li class="innerDetail"><a>이사회</a></li>
+                        <li class="innerDetail"><a>정관</a></li>
+                        <li class="innerDetail"><a>기업지배구조</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>공시정보</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>주가정보</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>재무정보</a></li>
+                        <li class="innerDetail"><a>연결재무제표</a></li>
+                        <li class="innerDetail"><a>별도재무제표</a></li>
+                        <li class="innerDetail"><a>신용등급</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>IR일정</a></li>
+                        <li class="innerDetail"><a>IR행사</a></li>
+                        <li class="innerDetail"><a>주주총회</a></li>
+                        <li class="innerDetail"><a>IR미팅예약</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>IR자료실</a></li>
+                        <li class="innerDetail"><a>실적발표</a></li>
+                        <li class="innerDetail"><a>정기보고서</a></li>
+                        <li class="innerDetail"><a>IR FAQ</a></li>
+                    </ui>
+                    <ui class="investmentInner">
+                        <li class="innerBold"><a>증권사커버리지</a></li>
+                    </ui>
+                </div>
+
+                <div class="servicesMenu" id="serviceDetailMenu">
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>포털</a></li>
+                        <li class="innerDetail"><a>Daum</a></li>
+                        <li class="innerDetail"><a>Daum 뉴스</a></li>
+                        <li class="innerDetail"><a>Daum 검색</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>커뮤니케이션</a></li>
+                        <li class="innerDetail"><a>카카오톡</a></li>
+                        <li class="innerDetail"><a>카카오스토리</a></li>
+                        <li class="innerDetail"><a>Daum 메일</a></li>
+                        <li class="innerDetail"><a>Daum 카페</a></li>
+                        <li class="innerDetail"><a>아지트</a></li>
+                        <li class="innerDetail"><a>티스토리</a></li>
+                        <li class="innerDetail"><a>브런치</a></li>
+                        <li class="innerDetail"><a>멜론 아지톡</a></li>
+                        <li class="innerDetail"><a>카카오메일</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>콘텐츠</a></li>
+                        <li class="innerDetail"><a>카카오페이지</a></li>
+                        <li class="innerDetail"><a>카카오TV</a></li>
+                        <li class="innerDetail"><a>카카오뮤직</a></li>
+                        <li class="innerDetail"><a>카카오프렌즈</a></li>
+                        <li class="innerDetail"><a>Daum 웹툰</a></li>
+                        <li class="innerDetail"><a>1boon</a></li>
+                        <li class="innerDetail"><a>멜론</a></li>
+                        <li class="innerDetail"><a>멜론티켓</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>커머스</a></li>
+                        <li class="innerDetail"><a>카카오톡 선물하기</a></li>
+                        <li class="innerDetail"><a>카카오스타일</a></li>
+                        <li class="innerDetail"><a>카카오톡 쇼핑하기</a></li>
+                        <li class="innerDetail"><a>쇼핑하우</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>게임</a></li>
+                        <li class="innerDetail"><a>카카오게임즈</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>핀테크</a></li>
+                        <li class="innerDetail"><a>카카오페이</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>모빌리티&라이프</a></li>
+                        <li class="innerDetail"><a>카카오 T</a></li>
+                        <li class="innerDetail"><a>카카오 T 대리</a></li>
+                        <li class="innerDetail"><a>카카오내비</a></li>
+                        <li class="innerDetail"><a>카카오맵</a></li>
+                        <li class="innerDetail"><a>카카오버스</a></li>
+                        <li class="innerDetail"><a>카카오지하철</a></li>
+                        <li class="innerDetail"><a>카카오헤어샵</a></li>
+                    </ui>
+                    <ui class="servicesInner">
+                        <li class="innerBold"><a>소셜임팩트</a></li>
+                        <li class="innerDetail"><a>카카오같이가치</a></li>
+                    </ui>
+                </div>
+
+                <div class="socialMenu" id="socialDetailMenu">
+                    <ui class="socialInner">
+                        <li class="innerBold"><a>소셜임팩트 서비스</a></li>
+                        <li class="innerDetail"><a>카카오같이가치</a></li>
+                        <li class="innerDetail"><a>카카오메이커스</a></li>
+                    </ui>
+                    <ui class="socialInner">
+                        <li class="innerBold"><a>사회공헌</a></li>
+                        <li class="innerDetail"><a>Next</a></li>
+                        <li class="innerDetail"><a>Connect</a></li>
+                        <li class="innerDetail"><a>Kakao krew</a></li>
+                    </ui>
+                    <ui class="socialInner">
+                        <li class="innerBold"><a>상생</a></li>
+                        <li class="innerDetail"><a>상생센터</a></li>
+                        <li class="innerDetail"><a>상생서포터즈</a></li>
+                        <li class="innerDetail"><a>Kakao 클래스</a></li>
+                    </ui>
+                    <ui class="socialInner">
+                        <li class="innerBold"><a>제주지역협력</a></li>
+                        <li class="innerDetail"><a>교육 산학</a></li>
+                        <li class="innerDetail"><a>지역 상생</a></li>
+                        <li class="innerDetail"><a>제주창조경제혁신센터</a></li>
+                    </ui>
+                    <ui class="socialInner">
+                        <li class="innerBold"><a>Partners with Kakao</a></li>
+                    </ui>
+                </div>
+            </div>
         </div>
+
 
     </div>
 </body>

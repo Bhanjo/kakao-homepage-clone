@@ -1,54 +1,103 @@
 /* 네비 스타일 */
-#topNavi {
+.menubar {
+    width: 100%;
+    position: fixed;
+}
+.topNavi {
     font-size: 1rem;
     font-weight: bold;
     display: flex;
     background-color: rgb(251, 251, 251);
-    padding: 1rem 4rem 0rem 4rem;
+    padding: 1rem 0rem 0rem 4rem;
     border: rgb(199, 199, 199) 1px thick;
     align-items: center;
 }
-#naviList {
-    width: auto;
-    height: 100%;
+.naviList {
     margin: 0px auto;
     display: inline-flex;
     flex-direction: row;
 }
-#topNavi a {
+.topNavi a {
     text-decoration-line: none;
 }
-#listInner, #languageInner {
+.listInner, .languageInner {
     height: 100%;
     display: flex;
     padding: 0rem 0.7rem 1rem 0.7rem;
     align-items: center;
 }
-#languageInner a {
+.languageInner a {
     font-size: 0.9rem;
     color: rgb(177, 177, 177);
 }
-#listInner:hover, #topLogoImg:hover, #languageInner:hover {
+.listInner:hover, .topLogoImg:hover, .languageInner:hover {
     cursor: pointer;
 }
-#languageInner a:hover {
+.languageInner a:hover {
     color: rgb(0, 0, 0);
 }
-#listInner:hover {
+.listInner:hover {
     border: 5px rgb(47, 47, 47) solid;
     border-width: 0 0 2px 0;
 }
-#topLogoImg {
-    margin: 0rem 3rem 0.5rem 0rem;
+.topLogoImg {
+    margin: 0rem 3rem 0.6rem 0rem;
     width: 95px;
     height: 35px;
 }
-#recuritIcon {
+.recuritIcon {
     margin-left: 3px;
     width: 13px;
     height: 13px;
 }
-#changeLanguage {
+.changeLanguage {
     display: flex;
-    margin-left: 3rem;
+    margin: 0 5rem 0 3rem;
+}
+
+/* 네비 상세메뉴 */
+.naviMenu {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: rgb(251, 251, 251);
+    border: 1px rgb(226, 226, 226) solid;
+    border-width: 1px 0px 1px 0px;
+}
+.kakaoDetailMenu, .investmentMenu, .servicesMenu, .socialMenu {
+    margin: 0 3rem 0 3rem;
+    border: 1px rgb(226, 226, 226) solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+/* 메뉴 none->flex 자바스크립트 구현하기 */
+.kakaoDetailMenu {
+    display: none;
+}
+.investmentMenu {
+    display: flex;
+}
+.servicesMenu {
+    display: none;
+}
+.socialMenu {
+    display: none;
+}
+
+.kakaoMenuInner, .investmentInner, .servicesInner, .socialInner {
+    width: 100%;
+    display: inline-block;
+    padding: 2rem 0 3rem 0;
+    margin: 0 auto;
+    border: 1px rgb(226, 226, 226) solid;
+    border-width: 0px 1px 0px 1px;
+    align-items: center;
+}
+.innerDetail {
+    margin: 0 0 0.5rem 0;
+}
+.innerBold {
+    font-size: 0.85rem;
+    font-weight: bolder;
+    margin: 0 0 2rem 0;
 }
