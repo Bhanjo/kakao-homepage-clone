@@ -1,5 +1,7 @@
 /* 초기리셋 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;}
 fieldset,img{border:0 none}
 dl,ul,ol,menu,li{list-style:none}
 blockquote, q{quotes:none}
@@ -9,16 +11,88 @@ input::-ms-clear{display:none}
 input::-webkit-contacts-auto-fill-button {visibility:hidden;display:none !important;pointer-events:none;position:absolute;right:0}
 button{border:0 none;border-radius:0;background-color:transparent;cursor:pointer}
 body{background:#1e1e1e;word-wrap:break-word;word-break:keep-all}
-body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;font-family:'NotoSans Light','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;color:#666}
+body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;font-family:'Noto Sans KR','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;color:#666}
 a{color:#333;text-decoration:none}
 a:active, a:hover{text-decoration:underline}
 a:active{background-color:transparent}
 address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
-
+body {
+    min-width: 1200px;
+}
 
 /* 기본 스타일 */
-#pageWrap {
+.pageWrap {
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 배너 스타일 */
+.banner {
+    width: 100%;
+    position: relative;
+}
+.bannerInner {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+}
+.bannerBg {
+    width: 100%;
+    vertical-align: middle;
+}
+.bannerText {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    line-height: 1.2;
+}
+.bannerText a {
+    font-size: 2.6rem;
+    font-weight: bolder;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+}
+
+/* 카드스타일 */
+.cards {
+    min-width: 1000px;
+    display: flex;
+}
+.cardKakaoStyle {
+    min-width: 1100px;
+    width: 50%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    margin: 6rem auto 0 auto;
+    /* padding: 3rem; */
+}
+.cardKakaoStyle a {
+    text-decoration: none;
+}
+.cardTitle {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    line-height: 1.3;
+    /* margin-bottom: 2rem; */
+}
+.cardEnter {
+    display: flex;
+    align-items: center;
+}
+.cardTitle, .cardEnter {
+    padding: 2rem 0 0 3rem;
+}
+.arrows {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.cardKakaoStyleVideo {
+    position: relative;
+    left: 0;
+}
+.cardKakaoStyleVideoInner {
+    margin: 6rem 0 0 0;
+    width: 100%;
 }

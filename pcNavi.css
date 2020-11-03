@@ -2,6 +2,7 @@
 .menubar {
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 .topNavi {
     font-size: 1rem;
