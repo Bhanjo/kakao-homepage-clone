@@ -1,5 +1,4 @@
 // 드롭다운 메뉴바 코드
-
 const kakaoMenu = document.getElementById("hoverKakao");
 const kakaoDetail = document.getElementById("kakaoDetail");
 kakaoMenu.addEventListener("mouseover", showKakao);

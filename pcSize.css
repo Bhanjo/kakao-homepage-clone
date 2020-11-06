@@ -207,25 +207,58 @@ body {
     display: flex;
     margin: 0 auto;
 }
-.copyrightInner, .otherSite {
+.copyrightInner, .otherSite, .company {
     font-family: sans-serif;
-    font-size: 11px;
-    margin: 0 1rem;
+    font-size: 0.7rem;
+    margin: 0 0.8rem;
 }
-.copyrightInner a:hover {
+.listArrow {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.copyrightInner:hover, .otherSite:hover {
+    cursor: pointer;
+}
+.copyrightInner:hover a {
     font-weight: bold;
     color: #000000;
 }
+.copyrightInner:hover .listArrow {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
 .company {
     color: #868686;
-    margin: 0 1rem;
     display: block;
-    font-size: 11px;
 }
 .otherSite {
-    width: 10%;
+    position: relative;
+    width: 13%;
     margin: 0 0 0 auto;
     border: 1px #161616 solid;
     padding-bottom: 4px;
     border-width: 0 0 1px 0;
+    align-items: center;
+}
+.siteList {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px #cacaca solid;
+    padding: 1.5rem;
+}
+.siteListDetail {
+    margin-bottom: 0.5rem;
+    font-weight: lighter;
+}
+.wideOpen, .wideClose {
+    float: right;
+    margin: 0 auto 0 0;
+}
+.wideClose {
+    display: none;
 }
