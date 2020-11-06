@@ -31,7 +31,7 @@
     font-size: 0.9rem;
     color: rgb(177, 177, 177);
 }
-.listInner:hover, .topLogoImg:hover, .languageInner:hover {
+.listInner:hover, .topLogoImg:hover, .languageInner:hover, .innerBold:hover, .innerDetail:hover {
     cursor: pointer;
 }
 .languageInner a:hover {
@@ -88,6 +88,7 @@
     align-items: center;
 }
 .innerDetail {
+    font-family: sans-serif;
     margin: 0 0 0.5rem 0;
 }
 .innerBold {

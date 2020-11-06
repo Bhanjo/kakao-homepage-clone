@@ -208,6 +208,7 @@ body {
     margin: 0 auto;
 }
 .copyrightInner, .otherSite, .company {
+    position: relative;
     font-family: sans-serif;
     font-size: 0.7rem;
     margin: 0 0.8rem;
@@ -218,10 +219,6 @@ body {
 }
 .copyrightInner:hover, .otherSite:hover {
     cursor: pointer;
-}
-.copyrightInner:hover a {
-    font-weight: bold;
-    color: #000000;
 }
 .copyrightInner:hover .listArrow {
     -moz-transform: scaleY(-1);
@@ -242,7 +239,7 @@ body {
     border-width: 0 0 1px 0;
     align-items: center;
 }
-.siteList {
+.siteList, .copyList {
     position: absolute;
     bottom: 2rem;
     left: 0;
@@ -251,7 +248,7 @@ body {
     border: 1px #cacaca solid;
     padding: 1.5rem;
 }
-.siteListDetail {
+.siteListDetail, .copyListDetail {
     margin-bottom: 0.5rem;
     font-weight: lighter;
 }
